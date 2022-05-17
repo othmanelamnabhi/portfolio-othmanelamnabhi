@@ -36,9 +36,9 @@ export default function Layout({ children, ...customMeta }) {
         <meta name='twitter:image' content={meta.image} />
         <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />
       </Head>
-      <main className='m-8'>
+      <main className='my-8'>
         <Header />
-        <div className='black'>{children}</div>
+        <div>{children}</div>
         <Footer />
       </main>
     </div>
