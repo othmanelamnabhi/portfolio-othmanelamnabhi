@@ -6,6 +6,7 @@ const skills = [
   "JavaScript",
   "HTML",
   "CSS",
+  "REST API",
   "React",
   "Redis",
   "MUI",
