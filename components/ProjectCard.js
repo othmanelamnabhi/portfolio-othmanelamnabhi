@@ -6,7 +6,7 @@ function ProjectCard({
   project: { projectName, projectLink, projectRepo, projectDescription, projectStack },
 }) {
   return (
-    <div className='bg-custom-light-tarawera p-4 dark:bg-custom-dark-motorcycle-black'>
+    <div className='mb-4 bg-custom-light-tarawera p-4 dark:bg-custom-dark-motorcycle-black'>
       <div className='mb-1 text-base font-semibold text-custom-light-dodger-blue dark:text-custom-dark-3-days-ecchymose'>
         Featured project
       </div>

@@ -14,8 +14,11 @@ function BlogPost({ postData }) {
   }, []);
   console.log(postData.contentMarkdown);
   return (
-    <Layout>
-      <article className='mx-8 my-12 max-w-none'>
+    <Layout
+      title={postData.title}
+      description={postData.description}
+      image={postData.coverImage}>
+      <article className='mx-8 my-12'>
         <h1 className='text-4xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
           {postData.title}
         </h1>
@@ -27,7 +30,7 @@ function BlogPost({ postData }) {
           }).format(new Date(postData.dateAdded))}
         </time>
         <div
-          className='prose prose-headings:text-custom-light-tarawera  prose-p:text-custom-light-shuttle-gray prose-a:text-custom-light-dodger-blue prose-strong:font-bold prose-strong:text-custom-light-shuttle-gray prose-code:text-custom-light-shuttle-gray prose-ol:text-custom-light-shuttle-gray prose-ul:text-custom-light-shuttle-gray dark:prose-headings:text-custom-dark-off-by-one dark:prose-p:text-custom-dark-gull-gray dark:prose-a:text-custom-dark-3-days-ecchymose dark:prose-strong:text-custom-dark-gull-gray dark:prose-code:text-custom-dark-off-by-one dark:prose-ol:text-custom-dark-gull-gray dark:prose-ul:text-custom-dark-gull-gray'
+          className='prose max-w-none  prose-headings:text-custom-light-tarawera prose-p:text-custom-light-shuttle-gray prose-a:text-custom-light-dodger-blue prose-strong:font-bold prose-strong:text-custom-light-shuttle-gray prose-code:text-custom-light-shuttle-gray prose-ol:text-custom-light-shuttle-gray prose-ul:text-custom-light-shuttle-gray dark:prose-headings:text-custom-dark-off-by-one dark:prose-p:text-custom-dark-gull-gray dark:prose-a:text-custom-dark-3-days-ecchymose dark:prose-strong:text-custom-dark-gull-gray dark:prose-code:text-custom-dark-off-by-one dark:prose-ol:text-custom-dark-gull-gray dark:prose-ul:text-custom-dark-gull-gray'
           dangerouslySetInnerHTML={{ __html: md().render(postData.content) }}
         />
       </article>
@@ -57,6 +60,7 @@ export async function getStaticProps({ params }) {
       content: post.params.contentMarkdown,
       coverImage: post.params.coverImage,
       dateAdded: post.params.dateAdded,
+      description: post.params.description,
     };
   });
 

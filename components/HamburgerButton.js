@@ -1,33 +1,47 @@
-import { useRef, useState } from "react";
+import { useEffect } from "react";
 
 function HamburgerButton({ isOpen, setIsOpen }) {
+  useEffect(() => {
+    console.log(document.body.style.overflow);
+  });
+
+  const setHidden = () => {
+    console.log(document.body.style.overflow);
+    if (document.body.style.overflow !== "hidden") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  };
+
   return (
     <>
       <div
         onClick={() => {
           setIsOpen(!isOpen);
+          setHidden();
         }}
-        className={`w-12 h-12 ${
+        className={`h-12 w-12 ${
           isOpen
-            ? "dark:bg-custom-dark-coal-sprouse bg-custom-dark-off-by-one"
-            : "dark:bg-custom-dark-3-days-ecchymose bg-custom-light-dodger-blue"
-        } rounded-full z-20 relative`}>
+            ? "bg-custom-dark-off-by-one dark:bg-custom-dark-coal-sprouse"
+            : "bg-custom-light-dodger-blue dark:bg-custom-dark-3-days-ecchymose"
+        } relative z-20 rounded-full`}>
         <span
           className={`${
             isOpen
-              ? "w-8 top-[12px] rotate-45 bg-custom-light-tarawera"
-              : "w-6 rotate-0 top-[14px] bg-custom-dark-off-by-one"
-          }  h-1 dark:bg-custom-dark-off-by-one rounded-xl mx-auto block absolute left-[12px] origin-left ease-out duration-150`}></span>
+              ? "top-[12px] w-8 rotate-45 bg-custom-light-tarawera"
+              : "top-[14px] w-6 rotate-0 bg-custom-dark-off-by-one"
+          }  absolute left-[12px] mx-auto block h-1 origin-left rounded-xl duration-150 ease-out dark:bg-custom-dark-off-by-one`}></span>
         <span
-          className={`w-6 h-1 bg-custom-dark-off-by-one rounded-xl mx-auto block absolute rotate-0 left-[12px] top-[22px] origin-left ease-out duration-150 ${
+          className={`absolute left-[12px] top-[22px] mx-auto block h-1 w-6 origin-left rotate-0 rounded-xl bg-custom-dark-off-by-one duration-150 ease-out ${
             isOpen ? `w-0 opacity-0` : null
           }`}></span>
         <span
           className={`${
             isOpen
-              ? "w-8 top-[34px] -rotate-45 bg-custom-light-tarawera"
-              : "w-6 rotate-0 top-[30px] bg-custom-dark-off-by-one"
-          } h-1 rounded-xl mx-auto block absolute left-[12px] origin-left ease-out duration-150 dark:bg-custom-dark-off-by-one`}></span>
+              ? "top-[34px] w-8 -rotate-45 bg-custom-light-tarawera"
+              : "top-[30px] w-6 rotate-0 bg-custom-dark-off-by-one"
+          } absolute left-[12px] mx-auto block h-1 origin-left rounded-xl duration-150 ease-out dark:bg-custom-dark-off-by-one`}></span>
       </div>
     </>
   );
