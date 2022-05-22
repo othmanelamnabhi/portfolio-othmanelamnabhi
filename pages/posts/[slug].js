@@ -1,9 +1,11 @@
-import Image from "next/image";
 import Layout from "../../components/Layout";
 import { getAllPostSlugs, getAllPostData } from "../../lib/posts";
 import md from "markdown-it";
 import { useEffect } from "react";
 import Prism from "prismjs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 require("prismjs/components/prism-javascript");
 require("prismjs/components/prism-jsx");
@@ -12,13 +14,24 @@ function BlogPost({ postData }) {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
-  console.log(postData.contentMarkdown);
+
   return (
     <Layout
       title={postData.title}
       description={postData.description}
       image={postData.coverImage}>
       <article className='mx-8 my-12'>
+        <div className='group mb-7 inline-block text-xl font-semibold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
+          <Link href={"/#blog"}>
+            <a>
+              <FontAwesomeIcon
+                icon={faArrowLeftLong}
+                className='mr-3 duration-200 ease-out group-hover:-translate-x-1'
+              />{" "}
+              Back to Blog
+            </a>
+          </Link>
+        </div>
         <h1 className='text-4xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
           {postData.title}
         </h1>
@@ -72,7 +85,6 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  // console.log("postData", treatedData);
   return {
     props: {
       postData,

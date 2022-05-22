@@ -20,7 +20,8 @@
     "next-themes": "^0.2.0",
     "prismjs": "^1.28.0",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "sharp": "^0.30.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",

@@ -14,6 +14,8 @@ const skills = [
   "Express.js",
   "MongoDB",
   "Next.js",
+  "Tailwind CSS",
+  "WordPress",
 ];
 
 function CloudTag() {
@@ -31,6 +33,7 @@ function CloudTag() {
       decel: 1,
       textHeight: 60,
       outlineMethod: "none",
+      noSelect: true,
     };
 
     try {

@@ -1,4 +1,6 @@
-function Menu({ isOpen }) {
+import Link from "next/link";
+
+function Menu({ isOpen, setIsOpen, setHidden }) {
   return (
     <nav
       className={`${
@@ -13,26 +15,56 @@ function Menu({ isOpen }) {
         <li
           className={`mx-auto duration-500 ease-out ${
             isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-          }`}>
-          <a href='#'>About Me</a>
+          }`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            setHidden();
+          }}>
+          <Link href='/#about'>
+            <a>About Me</a>
+          </Link>
         </li>
         <li
           className={`mx-auto delay-100 duration-500 ease-out ${
             isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-          }`}>
-          <a href='#'>Projects</a>
+          }`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            setHidden();
+          }}>
+          <Link href='/#projects'>
+            <a>Projects</a>
+          </Link>
         </li>
         <li
           className={`mx-auto delay-200 duration-500 ease-out ${
             isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-          }`}>
-          <a href='#'>Blog</a>
+          }`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            setHidden();
+          }}>
+          <Link href='/#blog'>
+            <a>Blog</a>
+          </Link>
         </li>
         <li
           className={`mx-auto delay-300 duration-500 ease-out ${
             isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+          }`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            setHidden();
+          }}>
+          <Link href='/#contact'>
+            <a>Contact</a>
+          </Link>
+        </li>
+        <li
+          className={`mx-auto delay-[400ms] duration-500 ease-out ${
+            isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
           }`}>
-          <a href='#'>Contact</a>
+          <a href='#'>Resume</a>
         </li>
       </ul>
     </nav>

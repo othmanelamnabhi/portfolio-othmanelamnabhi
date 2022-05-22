@@ -12,6 +12,7 @@ export default function Layout({ children, ...customMeta }) {
     image: "/og.png",
     ...customMeta,
   };
+
   return (
     <div>
       <Head>
@@ -36,7 +37,7 @@ export default function Layout({ children, ...customMeta }) {
         <meta name='twitter:image' content={meta.image} />
         <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />
       </Head>
-      <main className='my-8'>
+      <main className={`my-8`}>
         <Header />
         <div>{children}</div>
         <Footer />

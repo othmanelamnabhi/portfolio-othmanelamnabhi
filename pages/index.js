@@ -31,7 +31,6 @@ export async function getStaticProps(context) {
     };
   });
 
-  console.log("postData", postData.length);
   return {
     props: {
       postData,

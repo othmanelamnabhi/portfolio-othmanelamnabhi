@@ -9,8 +9,10 @@ function Hero() {
           I&apos;m Othmane
         </h1>
         <p className='font-Montserrat text-base font-normal text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
-          If I&apos;m not thinking about code then I&apos;m most definitely thinking about
-          sushi
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book.
         </p>
       </div>
       <Image

@@ -6,6 +6,14 @@ import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const setHidden = () => {
+    if (document.body.style.overflow !== "hidden") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  };
+
   return (
     <>
       <header className='mx-8 flex items-center justify-between pb-6'>
@@ -15,8 +23,8 @@ export default function Header() {
           </Link>
         </div>
         <div>
-          <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
-          <Menu isOpen={isOpen} />
+          <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} setHidden={setHidden} />
+          <Menu isOpen={isOpen} setIsOpen={setIsOpen} setHidden={setHidden} />
         </div>
       </header>
       <span className='mx-8 block bg-custom-dark-gull-gray p-[0.1px]'></span>
