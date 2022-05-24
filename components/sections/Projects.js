@@ -6,7 +6,7 @@ const listOfProjects = [
     projectLink: "https://twiginity.herokuapp.com",
     projectRepo: "https://github.com/othmanelamnabhi/twiginity",
     projectDescription:
-      "You can delete your most recent tweets or all your tweets with Twiginity. Frontend built with React / Backend with Node/Express.",
+      "Delete your Twitter posts in bulk based on their age or specific text they contain. Twiginity makes use of Twitter API 1.1.",
     projectStack: [
       "React",
       "Redis",
@@ -16,6 +16,7 @@ const listOfProjects = [
       "Twitter API",
       "Socket.io",
       "MUI",
+      "Heroku",
     ],
   },
   {
@@ -23,8 +24,8 @@ const listOfProjects = [
     projectLink: "https://thewannabe.dev",
     projectRepo: "https://github.com/othmanelamnabhi/portfolio-thewannabedev",
     projectDescription:
-      "You can delete your most recent tweets or all your tweets with Twiginity. Frontend built with React / Backend with Node/Express.",
-    projectStack: ["React", "Next.js", "Tailwind CSS"],
+      "This is the first version of my personal website. Built using frameworks, libraries and hosting platforms I wanted to experiment with and learn more about.",
+    projectStack: ["React", "Next.js", "Tailwind CSS", "Vercel"],
   },
 ];
 
@@ -35,7 +36,7 @@ function Projects() {
         Projects
       </h2>
       {listOfProjects.map((project, index) => {
-        return <ProjectCard project={project} key={index} />;
+        return <ProjectCard project={project} key={project.projectName} />;
       })}
     </section>
   );

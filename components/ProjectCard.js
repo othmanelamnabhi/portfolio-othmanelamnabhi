@@ -26,13 +26,21 @@ function ProjectCard({
         })}
       </div>
       <div className='mt-5'>
-        <a href={projectRepo} target='_blank' rel='noreferrer'>
+        <a
+          href={projectRepo}
+          target='_blank'
+          rel='noreferrer'
+          aria-label='visit github repo'>
           <FontAwesomeIcon
             icon={faGithub}
             className='mr-4 text-3xl text-custom-dark-off-by-one duration-300 ease-out hover:text-custom-light-dodger-blue hover:dark:text-custom-dark-3-days-ecchymose'
           />
         </a>
-        <a href={projectLink} target='_blank' rel='noreferrer'>
+        <a
+          href={projectLink}
+          target='_blank'
+          rel='noreferrer'
+          aria-label='check out live demo'>
           <FontAwesomeIcon
             icon={faArrowUpRightFromSquare}
             className='mr-4 text-3xl text-custom-dark-off-by-one duration-300 ease-out hover:text-custom-light-dodger-blue hover:dark:text-custom-dark-3-days-ecchymose'

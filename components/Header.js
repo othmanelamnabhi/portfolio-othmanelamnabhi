@@ -3,6 +3,7 @@ import Image from "next/image";
 import HamburgerButton from "./HamburgerButton";
 import Menu from "./Menu";
 import Link from "next/link";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ export default function Header() {
         <div>
           <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} setHidden={setHidden} />
           <Menu isOpen={isOpen} setIsOpen={setIsOpen} setHidden={setHidden} />
+          <ThemeSwitcher />
         </div>
       </header>
       <span className='mx-8 block bg-custom-dark-gull-gray p-[0.1px]'></span>

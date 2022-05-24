@@ -16,10 +16,7 @@ function BlogPost({ postData }) {
   }, []);
 
   return (
-    <Layout
-      title={postData.title}
-      description={postData.description}
-      image={postData.coverImage}>
+    <Layout title={postData.title} description={postData.description}>
       <article className='mx-8 my-12'>
         <div className='group mb-7 inline-block text-xl font-semibold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
           <Link href={"/#blog"}>
@@ -71,7 +68,6 @@ export async function getStaticProps({ params }) {
       title: post.params.title,
       slug: post.params.slug,
       content: post.params.contentMarkdown,
-      coverImage: post.params.coverImage,
       dateAdded: post.params.dateAdded,
       description: post.params.description,
     };

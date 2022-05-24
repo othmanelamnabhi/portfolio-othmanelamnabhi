@@ -8,19 +8,22 @@ function AboutMe() {
       <h2 className='mb-4 text-3xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
         About me
       </h2>
-      <p className='text-justify text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
-        Hello! My name is Othmane and Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+
+      <p className='mb-3 text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
+        I have been, for the past 5 years, helping clients establish their online presence
+        and use Social Media Marketing and Search Engine Marketing effectively to generate
+        conversions.
       </p>
-      <p className='text-justify text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
-        Hello! My name is Othmane and Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+      <p className='mb-3 text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
+        With 4+ years of experience in WordPress development under my belt, I broadened my
+        skillset to encompass Javascript, React, Node.js and Express.js as an answer to my
+        clients’ growing needs.
       </p>
-      <p className='text-justify text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
+      <p className='mb-3 text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
+        I love what I do and I go above and beyond my due diligence for each client,
+        bridging the gap between marketing and technology.
+      </p>
+      <p className='mb-3 text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
         Here are a few technologies I’ve been working with recently:
       </p>
       <CloudTag />

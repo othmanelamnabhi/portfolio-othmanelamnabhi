@@ -2,14 +2,16 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
 
 export default function Layout({ children, ...customMeta }) {
+  const { resolvedTheme } = useTheme();
   const router = useRouter();
   const meta = {
     title: "Othmane Lamnabhi | MERN Developer",
     description:
-      "I've been developing websites for 5 years straight. Get in touch with me to know more.",
-    image: "/og.png",
+      "I'm a Full Stack Developer and I love bringing ideas to live through code. (WordPress, React, Express.js, Node.js, MongoDB, Next.js)",
+    image: "/images/og.jpg",
     ...customMeta,
   };
 
@@ -31,8 +33,15 @@ export default function Layout({ children, ...customMeta }) {
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:site' content='@thewannabedev' />
         <meta name='twitter:creator' content='@thewannabedev' />
-        <link rel='icon' type='image/png' href='' />
-        <link rel='apple-touch-icon' href='' />
+        <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+        <link rel='manifest' href='/site.webmanifest' />
+        <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
+        <meta
+          name='theme-color'
+          content={resolvedTheme === "light" ? "#FFFFFE" : "#16161A"}
+        />
         <meta property='og:image' content={meta.image} />
         <meta name='twitter:image' content={meta.image} />
         <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />

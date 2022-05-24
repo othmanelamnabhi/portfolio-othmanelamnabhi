@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thewannabe.dev
+
+# Sitemaps
+Sitemap: https://thewannabe.dev/sitemap.xml

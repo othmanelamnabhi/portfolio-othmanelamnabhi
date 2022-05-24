@@ -5,9 +5,11 @@ function Contact() {
         Get in touch
       </h2>
       <p className='mb-9 text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
-        Although I’m not currently looking for any new opportunities, my inbox is always
-        open. Whether you have a question or just want to say hi, I’ll try my best to get
-        back to you!
+        I am currently looking 🔍 for Javascript, React and Node.js opportunities
+        (full-time or freelance).
+        <br />
+        If you have any questions, think we&apos;re a fit or just want to say hi, feel
+        free to reach out to me.
       </p>
       <a
         href='mailto:othmane@thewannabe.dev'

@@ -45,7 +45,6 @@ function CloudTag() {
   }, [resolvedTheme]);
   return (
     <>
-      <Script src='/scripts/tagcanvas.min.js' strategy='beforeInteractive' />
       <div id='myCanvasContainer'>
         <canvas width='700' height='700' id='myCanvas' className='w-full font-bold'>
           <p>

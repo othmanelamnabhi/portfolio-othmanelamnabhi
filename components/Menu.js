@@ -5,7 +5,7 @@ function Menu({ isOpen, setIsOpen, setHidden }) {
     <nav
       className={`${
         isOpen
-          ? "fixed left-0 top-0 z-10 h-full w-full bg-custom-light-dodger-blue bg-opacity-100 dark:bg-custom-dark-3-days-ecchymose"
+          ? "fixed left-0 top-0 z-20 h-full w-full bg-custom-light-dodger-blue bg-opacity-100 dark:bg-custom-dark-3-days-ecchymose"
           : "fixed left-0 top-0 z-[-1] h-full w-full"
       } transition-all duration-300 ease-out`}>
       <ul
