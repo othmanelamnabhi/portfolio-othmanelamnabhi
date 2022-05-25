@@ -11,7 +11,7 @@ export default function Layout({ children, ...customMeta }) {
     title: "Othmane Lamnabhi | MERN Developer",
     description:
       "I'm a Full Stack Developer and I love bringing ideas to live through code. (WordPress, React, Express.js, Node.js, MongoDB, Next.js)",
-    image: `${process.env.SITE_URL}/images/og.jpg`,
+    image: `https://thewannabe.dev/images/og.jpg`,
     ...customMeta,
   };
 
