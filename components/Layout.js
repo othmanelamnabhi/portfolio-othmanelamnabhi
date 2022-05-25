@@ -11,7 +11,7 @@ export default function Layout({ children, ...customMeta }) {
     title: "Othmane Lamnabhi | MERN Developer",
     description:
       "I'm a Full Stack Developer and I love bringing ideas to live through code. (WordPress, React, Express.js, Node.js, MongoDB, Next.js)",
-    image: "/images/og.jpg",
+    image: `${process.env.SITE_URL}/images/og.jpg`,
     ...customMeta,
   };
 
@@ -27,6 +27,7 @@ export default function Layout({ children, ...customMeta }) {
           property='og:description'
           content={meta.description}
         />
+        <meta property='og:image:type' content='image/jpeg' />
         <meta property='og:url' content={`https://thewannabedev.com${router.asPath}`} />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={meta.title} />
@@ -43,7 +44,7 @@ export default function Layout({ children, ...customMeta }) {
           content={resolvedTheme === "light" ? "#FFFFFE" : "#16161A"}
         />
         <meta property='og:image' content={meta.image} />
-        <meta name='twitter:image' content={meta.image} />
+
         <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />
       </Head>
       <main className={`my-8`}>
