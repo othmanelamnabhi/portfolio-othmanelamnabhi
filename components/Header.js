@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <>
-      <header className='mx-8 flex items-center justify-between pb-6'>
-        <div className='font-Montserrat text-xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
+      <header className='flex items-center justify-between px-8 pb-6 sm:px-14'>
+        <div className='font-Montserrat text-[1.25em] font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one md:text-[1.3em]'>
           <Link href='/'>
             <a>the wannabe dev</a>
           </Link>
@@ -29,7 +29,7 @@ export default function Header() {
           <ThemeSwitcher />
         </div>
       </header>
-      <span className='mx-8 block bg-custom-dark-gull-gray p-[0.1px]'></span>
+      <div className='mx-8 block bg-custom-dark-gull-gray p-[0.1px] sm:mx-14'></div>
     </>
   );
 }

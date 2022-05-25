@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 function HamburgerButton({ isOpen, setIsOpen, setHidden }) {
   return (
     <>
@@ -12,7 +10,7 @@ function HamburgerButton({ isOpen, setIsOpen, setHidden }) {
           isOpen
             ? "bg-custom-dark-off-by-one dark:bg-custom-dark-coal-sprouse"
             : "bg-custom-light-dodger-blue dark:bg-custom-dark-3-days-ecchymose"
-        } relative z-30 rounded-full`}>
+        } relative z-30 rounded-full md:hidden`}>
         <span
           className={`${
             isOpen

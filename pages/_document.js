@@ -2,7 +2,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang='en'>
+    <Html
+      lang='en'
+      className='max-w-screen-lg lg:mx-auto lg:border-x-[0.1px] lg:border-x-custom-dark-gull-gray'>
       <Head>
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap'

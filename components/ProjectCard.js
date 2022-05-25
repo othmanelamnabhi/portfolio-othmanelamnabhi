@@ -6,26 +6,31 @@ function ProjectCard({
   project: { projectName, projectLink, projectRepo, projectDescription, projectStack },
 }) {
   return (
-    <div className='mb-4 bg-custom-light-tarawera p-4 dark:bg-custom-dark-motorcycle-black'>
-      <div className='mb-1 text-base font-semibold text-custom-light-dodger-blue dark:text-custom-dark-3-days-ecchymose'>
-        Featured project
+    <div className='mb-4 bg-custom-light-tarawera p-4 dark:bg-custom-dark-motorcycle-black md:flex md:flex-col md:justify-between'>
+      <div>
+        <div className='mb-1 text-base font-semibold text-custom-light-dodger-blue dark:text-custom-dark-3-days-ecchymose'>
+          Featured project
+        </div>
+        <h3 className='mb-4 text-2xl font-bold text-custom-dark-off-by-one'>
+          {projectName}
+        </h3>
+        <p className='mb-6 text-custom-light-pattens-blue dark:text-custom-dark-gull-gray'>
+          {projectDescription}
+        </p>
       </div>
-      <h3 className='text-2xl font-bold text-custom-dark-off-by-one'>{projectName}</h3>
-      <p className='my-5 text-custom-light-pattens-blue dark:text-custom-dark-gull-gray'>
-        {projectDescription}
-      </p>
-      <div className='flex flex-wrap'>
+
+      <div className='mb-4 flex flex-wrap gap-1'>
         {projectStack.map((stack, index) => {
           return (
             <span
-              className='mr-2 mb-2 bg-custom-light-dodger-blue p-1 text-sm text-custom-dark-off-by-one dark:bg-custom-dark-3-days-ecchymose'
+              className=' bg-custom-light-dodger-blue p-1 text-sm text-custom-dark-off-by-one dark:bg-custom-dark-3-days-ecchymose'
               key={stack}>
               {stack}
             </span>
           );
         })}
       </div>
-      <div className='mt-5'>
+      <div className=''>
         <a
           href={projectRepo}
           target='_blank'

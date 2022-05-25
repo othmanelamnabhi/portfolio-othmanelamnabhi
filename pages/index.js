@@ -21,7 +21,6 @@ function HomePage({ postData }) {
 export default HomePage;
 
 export async function getStaticProps(context) {
-  // Fetch necessary data for the blog post using params.id
   const apiPostData = await getAllPostData();
   const postData = apiPostData.map((post) => {
     return {

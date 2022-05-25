@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -34,6 +33,7 @@ function CloudTag() {
       textHeight: 60,
       outlineMethod: "none",
       noSelect: true,
+      zoom: 0.9,
     };
 
     try {
@@ -45,7 +45,7 @@ function CloudTag() {
   }, [resolvedTheme]);
   return (
     <>
-      <div id='myCanvasContainer'>
+      <div id='myCanvasContainer' className='md:w-1/2'>
         <canvas width='700' height='700' id='myCanvas' className='w-full font-bold'>
           <p>
             Anything in here will be replaced on browsers that support the canvas element

@@ -31,13 +31,15 @@ const listOfProjects = [
 
 function Projects() {
   return (
-    <section id='projects' className='px-8 py-8'>
-      <h2 className='mb-4 text-3xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one'>
+    <section id='projects' className='px-8 py-8 sm:px-14'>
+      <h2 className='mb-4 text-3xl font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one sm:text-4xl md:mb-6'>
         Projects
       </h2>
-      {listOfProjects.map((project, index) => {
-        return <ProjectCard project={project} key={project.projectName} />;
-      })}
+      <div className='md:grid md:grid-cols-2 md:gap-4'>
+        {listOfProjects.map((project, index) => {
+          return <ProjectCard project={project} key={project.projectName} />;
+        })}
+      </div>
     </section>
   );
 }

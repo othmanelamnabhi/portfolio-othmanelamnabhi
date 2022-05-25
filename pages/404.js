@@ -22,12 +22,12 @@ export default function Custom404() {
                   icon={faArrowLeftLong}
                   className='mr-2 duration-200 ease-out group-hover:-translate-x-1'
                 />{" "}
-                Back to Blog
+                Back to Homepage
               </a>
             </Link>
           </div>
         </div>
-        <div className='mt-8'>
+        <div className='mt-8 sm:mx-auto sm:w-2/3'>
           <Image
             src='/images/othmane_lamnabhi_headshot_hq_404.png'
             alt='Picture of Othmane Lamnabhi'

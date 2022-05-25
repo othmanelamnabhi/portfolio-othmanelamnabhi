@@ -23,7 +23,7 @@ const socialLinks = [
 
 function SocialLinks() {
   return (
-    <ul className='flex justify-around'>
+    <ul className='flex justify-around sm:px-32 md:px-52'>
       {socialLinks.map((socialLink, index) => {
         return (
           <li key={index}>
