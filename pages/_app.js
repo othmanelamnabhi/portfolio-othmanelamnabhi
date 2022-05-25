@@ -4,7 +4,6 @@ import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Script from "next/script";
-import Head from "next/head";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -36,9 +35,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <ThemeProvider attribute='class'>
-      <Head>
-        <meta name='twitter:image' content={meta.image} />
-      </Head>
       <Script src='/scripts/tagcanvas.min.js' strategy='beforeInteractive' />
       <Component {...pageProps} />
     </ThemeProvider>

@@ -44,7 +44,7 @@ export default function Layout({ children, ...customMeta }) {
           content={resolvedTheme === "light" ? "#FFFFFE" : "#16161A"}
         />
         <meta property='og:image' content={meta.image} />
-
+        <meta name='twitter:image' content={meta.image} />
         <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />
       </Head>
       <main className={`my-8`}>
