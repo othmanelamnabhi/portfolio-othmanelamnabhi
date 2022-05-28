@@ -23,7 +23,7 @@ function ProjectCard({
         {projectStack.map((stack, index) => {
           return (
             <span
-              className=' bg-custom-light-dodger-blue p-1 text-sm text-custom-dark-off-by-one dark:bg-custom-dark-3-days-ecchymose'
+              className=' cursor-not-allowed bg-custom-light-dodger-blue p-1 text-sm text-custom-dark-off-by-one dark:bg-custom-dark-3-days-ecchymose'
               key={stack}>
               {stack}
             </span>
