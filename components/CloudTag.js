@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
+import useWindowSize from "./hooks/useWindowSize";
 
 const skills = [
   "JavaScript",
@@ -19,6 +20,7 @@ const skills = [
 
 function CloudTag() {
   const { resolvedTheme } = useTheme();
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const options = {
@@ -34,6 +36,7 @@ function CloudTag() {
       outlineMethod: "none",
       noSelect: true,
       zoom: 0.9,
+      noMouse: width >= 768 ? false : true,
     };
 
     try {
@@ -42,7 +45,7 @@ function CloudTag() {
       // something went wrong, hide the canvas container
       document.getElementById("myCanvasContainer").style.display = "none";
     }
-  }, [resolvedTheme]);
+  }, [resolvedTheme, width]);
   return (
     <>
       <div id='myCanvasContainer' className='md:w-1/2'>
