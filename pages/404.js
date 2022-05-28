@@ -15,17 +15,15 @@ export default function Custom404() {
           <p className='font-Montserrat text-base font-normal text-custom-light-shuttle-gray dark:text-custom-dark-gull-gray'>
             Page Not Found
           </p>
-          <div className='group mt-5 inline-block rounded-sm bg-custom-light-dodger-blue px-8 py-4 font-bold text-custom-dark-off-by-one duration-300 ease-out hover:scale-105 dark:bg-custom-dark-3-days-ecchymose'>
-            <Link href={"/"}>
-              <a>
-                <FontAwesomeIcon
-                  icon={faArrowLeftLong}
-                  className='mr-2 duration-200 ease-out group-hover:-translate-x-1'
-                />{" "}
-                Back to Homepage
-              </a>
-            </Link>
-          </div>
+          <Link href={"/"}>
+            <a className='group mt-5 inline-block rounded-sm bg-custom-light-dodger-blue px-8 py-4 font-bold text-custom-dark-off-by-one duration-300 ease-out hover:scale-105 dark:bg-custom-dark-3-days-ecchymose space-x-1'>
+              <FontAwesomeIcon
+                icon={faArrowLeftLong}
+                className='mr-2 duration-200 ease-out group-hover:-translate-x-1'
+              />
+              <span>Back to Homepage</span>
+            </a>
+          </Link>
         </div>
         <div className='mt-8 sm:mx-auto sm:w-2/3'>
           <Image
