@@ -12,7 +12,7 @@ function Contact() {
         free to reach out to me.
       </p>
       <a
-        href='mailto:othmane@thewannabe.dev'
+        href='mailto:contact@othmanelamnabhi.com'
         className='inline-block rounded-sm bg-custom-light-dodger-blue px-8 py-4 font-bold text-custom-dark-off-by-one duration-300 ease-out hover:scale-105 dark:bg-custom-dark-3-days-ecchymose'>
         Say Hello 👋
       </a>

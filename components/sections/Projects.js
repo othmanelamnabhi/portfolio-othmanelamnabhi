@@ -21,7 +21,7 @@ const listOfProjects = [
   },
   {
     projectName: "Personal Website v1",
-    projectLink: "https://thewannabe.dev",
+    projectLink: "https://othmanelamnabhi.com",
     projectRepo: "https://github.com/othmanelamnabhi/portfolio-thewannabedev",
     projectDescription:
       "This is the first version of my personal website. Built using frameworks, libraries and hosting platforms I wanted to experiment with and learn more about.",

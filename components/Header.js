@@ -20,7 +20,7 @@ export default function Header() {
       <header className='flex items-center justify-between px-8 pb-6 sm:px-14'>
         <div className='font-Montserrat text-[1.25em] font-bold text-custom-light-tarawera dark:text-custom-dark-off-by-one md:text-[1.3em]'>
           <Link href='/'>
-            <a>the wannabe dev</a>
+            <a>Othmane Lamnabhi</a>
           </Link>
         </div>
         <div>

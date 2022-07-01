@@ -11,7 +11,7 @@ export default function Layout({ children, ...customMeta }) {
     title: "Othmane Lamnabhi | MERN Developer",
     description:
       "I'm a Full Stack Developer and I love bringing ideas to live through code. (WordPress, React, Express.js, Node.js, MongoDB, Next.js)",
-    image: `https://thewannabe.dev/images/og.jpg`,
+    image: `https://othmanelamnabhi.com/images/og.jpg`,
     ...customMeta,
   };
 
@@ -28,7 +28,7 @@ export default function Layout({ children, ...customMeta }) {
           content={meta.description}
         />
         <meta property='og:image:type' content='image/jpeg' />
-        <meta property='og:url' content={`https://thewannabedev.com${router.asPath}`} />
+        <meta property='og:url' content={`https://othmanelamnabhi.com${router.asPath}`} />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
@@ -45,7 +45,7 @@ export default function Layout({ children, ...customMeta }) {
         />
         <meta property='og:image' content={meta.image} />
         <meta name='twitter:image' content={meta.image} />
-        <link rel='canonical' href={`https://thewannabedev.com${router.asPath}`} />
+        <link rel='canonical' href={`https://othmanelamnabhi.com${router.asPath}`} />
       </Head>
       <main className={`my-8`}>
         <Header />
