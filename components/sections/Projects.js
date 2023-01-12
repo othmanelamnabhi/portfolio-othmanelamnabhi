@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard";
 const listOfProjects = [
   {
     projectName: "Twiginity",
-    projectLink: "https://twiginity.herokuapp.com",
+    projectLink: "https://twiginity.onrender.com/",
     projectRepo: "https://github.com/othmanelamnabhi/twiginity",
     projectDescription:
       "Delete your Twitter posts in bulk based on their age or specific text they contain. Twiginity makes use of Twitter API 1.1.",
