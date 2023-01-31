@@ -22,7 +22,7 @@ const listOfProjects = [
   {
     projectName: "Personal Website v1",
     projectLink: "https://othmanelamnabhi.com",
-    projectRepo: "https://github.com/othmanelamnabhi/portfolio-thewannabedev",
+    projectRepo: "https://github.com/othmanelamnabhi/portfolio-othmanelamnabhi",
     projectDescription:
       "This is the first version of my personal website. Built using frameworks, libraries and hosting platforms I wanted to experiment with and learn more about.",
     projectStack: ["React", "Next.js", "Tailwind CSS", "Vercel"],
