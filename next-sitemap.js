@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://thewannabe.dev",
+  siteUrl: process.env.SITE_URL || "https://othmanelamnabhi.com",
   generateRobotsTxt: true,
 };
