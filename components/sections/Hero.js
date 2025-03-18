@@ -16,14 +16,14 @@ function Hero() {
 			</div>
 			<div className='md:w-1/2'>
 				<Image
-					src='/images/othmane_lamnabhi_headshot_hq_v2.png'
+					src='/images/othmane_lamnabhi_headshot_optimized.webp'
 					alt='Picture of Othmane Lamnabhi'
-					width={2413}
-					height={2480}
-					layout='responsive'
+					width={800}
+					height={822}
 					priority={true}
-					placeholder='empty'
-					sizes='50vw'
+					quality={85}
+					sizes='(max-width: 768px) 100vw, 50vw'
+					className='rounded-lg'
 				/>
 			</div>
 		</section>
